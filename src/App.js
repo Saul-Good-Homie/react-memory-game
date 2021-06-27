@@ -1,21 +1,16 @@
+import Header from "./components/Header";
+import Scoreboard from "./components/Scoreboard"
+import Grid from "./components/Grid"
+import Footer from "./components/Footer";
 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+        <Header />
+        <Scoreboard />
+        <Grid />
+        <Footer />
     </div>
   );
 }
