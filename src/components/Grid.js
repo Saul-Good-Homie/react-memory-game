@@ -68,10 +68,6 @@ const Grid = () => {
 		setCurrentScore(currentScore + 1);
 	};
 
-	// if (currentScore > highScore) {
-	// 	setHighScore(currentScore);
-	// }
-
 	const shuffleGrid = (array) => {
 		for (let i = array.length - 1; i > 0; i--) {
 			const j = Math.floor(Math.random() * (i + 1));
@@ -93,10 +89,10 @@ const Grid = () => {
 			console.log('already clicked, new game');
 			if (currentScore > highScore) {
 				setHighScore(currentScore);
-				setCurrentScore(0);
-				clearClicked(grid);
-				shuffleGrid(grid);
 			}
+			setCurrentScore(0);
+			clearClicked(grid);
+			shuffleGrid(grid);
 		} else {
 			block.clicked = true;
 			setGrid(newGrid);

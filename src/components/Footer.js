@@ -1,19 +1,19 @@
-import React from 'react'
+import React from 'react';
 
 const Footer = () => {
-  return (
+	return (
 		<footer>
 			<p>
 				This site is a learning project by
 				<a href="https://twitter.com/saul_good_homie"> Saul Belisle</a>, view
 				the code on
-				<a href="https://github.com/Saul-Good-Homie/CV-generator-react">
+				<a href="https://github.com/Saul-Good-Homie/react-memory-game">
 					{' '}
 					Github
 				</a>
 			</p>
 		</footer>
-  )
-}
+	);
+};
 
-export default Footer
+export default Footer;
